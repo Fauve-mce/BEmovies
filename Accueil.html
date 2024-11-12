@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Movie</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./assets/css/Accueil.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <header>
+        <div class="BEMOVIES">
+            <a href="/" class="logo-header"><img src="./assets/img/logo-BEMOVIE-4.svg"></a>
+        </div>
+        <nav class="navbar-header">
+            <ul>
+                <li class="active"><a href="#searsh_ancre">Searsh</a></li>
+                <li><a href="#latest_ancre">Latest</a></li>
+                <li><a href="#genres_ancre">Genres</a></li>
+                <li><a href="./RegisterLogin.html">Register</a></li>
+                <li><a href="./RegisterLogin.html">Singin</a></li>
+            </ul>
+        </nav>
+        <div class="btn-neum">
+            <input type="checkbox" class="btn-inner" >
+        </div>
+        
+        <!-- JS du bouton toggle day/night -->
+        <script>
+            const btn = document.querySelector(".btn-neum");
+            const btnInner = document.querySelector(".btn-inner");
+            
+            btn.addEventListener('click', ()=>{
+                btn.classList.toggle('turn-on');
+                btnInner.classList.toggle('btn-inner-on');
+                btn.classList.toggle('btn-neum-on');
+                document.querySelector('body').classList.toggle('body-on');
+                document.querySelector('.btn-neum').classList.toggle('btn-neum-on');
+            });
+        </script>
+    
+    </header>
+
+    <div class="section1" id="searsh_ancre">
+
+        <div class="header-searsh-movies">
+            <input type="text" id="searchInput" placeholder="searsh for a film ...">
+            <button type="submit" class="header-searsh-filter-button">
+                <img src="./assets/img/movie-icon-2.png">
+            </button>
+        </div>
+
+    </div>
+
+    <!-- <div class="section2">
+
+    </div> -->
+
+    <div class="section3" id="latest_ancre">
+        <h3>Latest release</h3>
+        <div class="swiper-container">
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/img/img-1.webp"></div>
+                <div class="swiper-slide"><img src="./assets/img/img-2.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/img/img-3.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/img/img-4.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/img/img-5.jpeg"></div>
+                <div class="swiper-slide"><img src="./assets/img/img-6.webp"></div>
+                <div class="swiper-slide"><img src="./assets/img/img-7.webp"></div>
+            </div>
+            <div class="swiper-button-next">
+            </div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+    </div>
+
+    <div class="section4" id="genres_ancre">
+        <div class="MBG">
+            <h3>Movies by genre</h3>
+            <div class="buttons">
+                <button genres-movie="" class="active">Comédie</button>
+                <button genres-movie="">Drama</button>
+                <button genres-movie="">Action</button>
+                <button genres-movie="">Romance</button>
+                <button genres-movie="">Fantasy</button>
+                <button genres-movie="">Animation</button>
+            </div>
+        </div>
+
+        <section class="splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="./assets/img/img-1.webp"></li>
+                    <li class="splide__slide"><img src="./assets/img/img-2.jpg"></li>
+                    <li class="splide__slide"><img src="./assets/img/img-3.jpg"></li>
+                    <li class="splide__slide"><img src="./assets/img/img-4.jpg"></li>
+                    <li class="splide__slide"><img src="./assets/img/img-5.jpeg"></li>
+                    <li class="splide__slide"><img src="./assets/img/img-6.webp"></li>
+                    <li class="splide__slide"><img src="./assets/img/img-7.webp"></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="BEMOVIES">
+            <a class="logo-footer"><img src="./assets/img/logo-BEMOVIE-4.svg"></a>
+        </div>
+        <nav class="navbar-footer">
+            <ul>
+                <li class="active"><a href="#searsh_ancre">Searsh</a></li>
+                <li><a href="#latest_ancre">Latest</a></li>
+                <li><a href="#genres_ancre">Genres</a></li>
+                <li><a href="./RegisterLogin.html">Register</a></li>
+                <li><a href="./RegisterLogin.html">Singin</a></li>
+            </ul>
+        </nav>
+        <p>@2023 - All rights reserved</p>
+    </footer>
+
+    <!-- CDN de splide et swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- Ajustement de splide voir la doc -->
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+                width: '75%',
+                start: 0, // Défini le start slide-pagination sur la slide '3' ⚪ (compte comme un tableau js 0,1,2,3)
+                perPage: 3, // Permet de chnagé le nombre de slide visible.
+                fixedWidth: '60vh',
+                gap: '-178px',
+                snap: true, // ajuster la défilement pour qu'il se met automatiquement au slide suivant quand on s'arrete avec notre souris au milieu.
+            });
+            splide.mount();
+        });
+    </script>
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>

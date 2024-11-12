@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register&Singin</title>
+    <link rel="stylesheet" href="./assets/css/RegisterLogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <header>
+        <div class="BEMOVIES">
+            <a href="./Accueil.html" class="logo-header"><img src="./assets/img/logo-BEMOVIE-4.svg"></a>
+        </div>
+        <nav class="navbar-header">
+            <ul>
+                <li class="active"><a href="./Accueil.html#searsh_ancre">Searsh</a></li>
+                <li><a href="./Accueil.html#latest_ancre">Latest</a></li>
+                <li><a href="./Accueil.html#genres_ancre">Genres</a></li>
+                <li><a href="./RegisterLogin.html">Register</a></li>
+                <li><a href="./RegisterLogin.html">Singin</a></li>
+            </ul>
+        </nav>
+        <div class="btn-neum">
+            <input type="checkbox" class="btn-inner">
+        </div>
+
+        <!-- JS du bouton toggle day/night -->
+        <script>
+            const btn = document.querySelector(".btn-neum");
+            const btnInner = document.querySelector(".btn-inner");
+
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('turn-on');
+                btnInner.classList.toggle('btn-inner-on');
+                btn.classList.toggle('btn-neum-on');
+                document.querySelector('body').classList.toggle('body-on');
+                document.querySelector('.btn-neum').classList.toggle('btn-neum-on');
+            });
+        </script>
+    </header>
+
+    <div class="main">
+
+        <div class="container" id="container">
+
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Create Account</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registeration</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Sing Up</button>
+                </form>
+            </div>
+
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Sing In</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email password</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Forget your password?</a>
+                    <button>Sing In</button>
+                </form>
+            </div>
+
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Welcom Back!</h1>
+                        <p>Enter your personal details to use all of site features.</p>
+                        <button class="hidden" id="login">Sing In</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Register with your personal details to use all of site features.</p>
+                        <button class="hidden" id="register">Sing Up</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS du toggle register/singin -->
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
+
+        registerBtn.addEventListener('click', () =>{
+            container.classList.add("active");
+        })
+
+        loginBtn.addEventListener('click', () =>{
+            container.classList.remove("active");
+        })
+    </script>
+
+</body>
+</html>
