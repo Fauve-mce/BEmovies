@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/Accueil.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
 </head>
 <body>
     <div id="stars"></div>
@@ -129,8 +130,40 @@
 
     <!-- CDN de splide et swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>>
+    
+    <!-- Ajustement de swiper voir la doc -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                grapCursor: true,
+                centeredSlides: false,
+                slidesPerView: 1, // Affiche trois slides visibles
+                spaceBetween: 30, // Espace entre les slides
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                effect: 'coverflow',
+                centeredSlides: true,
+                slidesPerView: '3',
+                coverflowEffect: {
+                    rotate: 30,       // Diminue l'angle pour un effet 3D plus subtil
+                    stretch: 0,     // Sépare un peu les slides
+                    depth: 150,        // Diminue la profondeur pour plus de visibilité des slides latéraux
+                    modifier: 1,
+                    slideShadows: true,
+                },
+            });
+            });
+    </script>
+        
     <!-- Ajustement de splide voir la doc -->
     <script>
         document.addEventListener( 'DOMContentLoaded', function() {
