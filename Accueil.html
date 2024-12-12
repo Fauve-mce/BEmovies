@@ -16,9 +16,9 @@
     <div id="stars2"></div>
     <div id="stars3"></div>
     <header>
-        <div class="BEMOVIES">
+        
             <a href="/" class="logo-header"><img src="./assets/img/logo-BEMOVIE-4.svg"></a>
-        </div>
+        
         <nav class="navbar-header">
             <ul>
                 <li class="active"><a href="#searsh_ancre">Searsh</a></li>
@@ -52,32 +52,31 @@
 
         <div class="header-searsh-movies">
             <input type="text" id="searchInput" placeholder="searsh for a film ...">
-            <button type="submit" class="header-searsh-filter-button">
+            <button type="submit" class="header-searsh-filter-button" id="searchButton">
                 <img src="./assets/img/movie-icon-2.png">
             </button>
         </div>
 
     </div>
 
-    <!-- <div class="section2">
-
-    </div> -->
+    <div class="section2">
+        <section id="carousel1" class="splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
 
     <div class="section3" id="latest_ancre">
         <h3>Latest release</h3>
         <div class="swiper-container">
             
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./assets/img/img-1.webp"></div>
-                <div class="swiper-slide"><img src="./assets/img/img-2.jpg"></div>
-                <div class="swiper-slide"><img src="./assets/img/img-3.jpg"></div>
-                <div class="swiper-slide"><img src="./assets/img/img-4.jpg"></div>
-                <div class="swiper-slide"><img src="./assets/img/img-5.jpeg"></div>
-                <div class="swiper-slide"><img src="./assets/img/img-6.webp"></div>
-                <div class="swiper-slide"><img src="./assets/img/img-7.webp"></div>
+                
             </div>
-            <div class="swiper-button-next">
-            </div>
+            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
         
@@ -96,7 +95,7 @@
             </div>
         </div>
 
-        <section class="splide" aria-labelledby="carousel-heading">
+        <section id="carousel2" class="splide" aria-labelledby="carousel-heading">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide"><img src="./assets/img/img-1.webp"></li>
@@ -112,25 +111,25 @@
 
     </div>
 
-    <footer>
-        <div class="BEMOVIES">
-            <a class="logo-footer"><img src="./assets/img/logo-BEMOVIE-4.svg"></a>
-        </div>
-        <nav class="navbar-footer">
-            <ul>
-                <li class="active"><a href="#searsh_ancre">Searsh</a></li>
-                <li><a href="#latest_ancre">Latest</a></li>
-                <li><a href="#genres_ancre">Genres</a></li>
-                <li><a href="./RegisterLogin.html">Register</a></li>
-                <li><a href="./RegisterLogin.html">Singin</a></li>
-            </ul>
-        </nav>
-        <p>@2023 - All rights reserved</p>
-    </footer>
+        <footer>
+            
+                <a class="logo-footer"><img src="./assets/img/logo-BEMOVIE-4.svg"></a>
+            
+            <nav class="navbar-footer">
+                <ul>
+                    <li class="active"><a href="#searsh_ancre">Searsh</a></li>
+                    <li><a href="#latest_ancre">Latest</a></li>
+                    <li><a href="#genres_ancre">Genres</a></li>
+                    <li><a href="./RegisterLogin.html">Register</a></li>
+                    <li><a href="./RegisterLogin.html">Singin</a></li>
+                </ul>
+            </nav>
+            <p>@2023 - All rights reserved</p>
+        </footer>
 
     <!-- CDN de splide et swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     
     <!-- Ajustement de swiper voir la doc -->
     <script>
@@ -138,8 +137,9 @@
             const swiper = new Swiper('.swiper-container', {
                 loop: true,
                 grapCursor: true,
-                centeredSlides: false,
-                slidesPerView: 1, // Affiche trois slides visibles
+                centeredSlides: true,
+                initialSlide: 2,
+                slidesPerView: 4, // Affiche trois slides visibles
                 spaceBetween: 30, // Espace entre les slides
                 loop: true,
                 pagination: {
@@ -151,12 +151,10 @@
                     prevEl: '.swiper-button-prev',
                 },
                 effect: 'coverflow',
-                centeredSlides: true,
-                slidesPerView: '3',
                 coverflowEffect: {
                     rotate: 30,       // Diminue l'angle pour un effet 3D plus subtil
                     stretch: 0,     // Sépare un peu les slides
-                    depth: 150,        // Diminue la profondeur pour plus de visibilité des slides latéraux
+                    depth: 250,        // Diminue la profondeur pour plus de visibilité des slides latéraux
                     modifier: 1,
                     slideShadows: true,
                 },
@@ -167,7 +165,7 @@
     <!-- Ajustement de splide voir la doc -->
     <script>
         document.addEventListener( 'DOMContentLoaded', function() {
-            var splide = new Splide( '.splide', {
+            var splide = new Splide( '#carousel2', {
                 width: '75%',
                 start: 0, // Défini le start slide-pagination sur la slide '3' ⚪ (compte comme un tableau js 0,1,2,3)
                 perPage: 3, // Permet de chnagé le nombre de slide visible.
@@ -178,6 +176,33 @@
             splide.mount();
         });
     </script>
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '#carousel1',{
+            type: 'loop',         // Boucle infinie
+        perPage: 3,           // Nombre de slides visibles en même temps
+        perMove: 4,           // Nombre de slides à déplacer par clic
+        gap: '200px',          // Espace entre les slides
+        pagination: false,    // Désactiver la pagination si elle n’est pas nécessaire
+        width: '0%',         // Largeur totale du carousel (ajustable selon vos besoins)
+        height: '200px',      // Hauteur des slides
+        autoWidth: false,     // Désactiver les largeurs automatiques si vous voulez un contrôle précis
+        // gap: '-178px',
+        // breakpoints: {        // Points de rupture pour le responsive design
+        //     1024: {
+        //         perPage: 4,    // Affiche 2 slides sur des écrans plus petits
+        //         gap: '15px',
+        //     },
+        //     768: {
+        //         perPage: 4,    // Affiche 1 slide sur des écrans encore plus petits
+        //         gap: '10px',
+        //     },
+        // },
+    });
+        splide.mount();
+    } );
+</script>
 
     
 
