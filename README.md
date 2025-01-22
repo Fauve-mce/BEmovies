@@ -52,25 +52,6 @@ Clone the repository to your local machine using Git:
 # API Reference
 
 
-
-
-
-
-
-
-# Lessons Learned
-
- If your question is "What did you learn while building this project? What challenges did you face and how did you overcome them?" take a look ⬇️
-
-### 1. Pagination of films in the carousel
-
-#### Problem
-
-During development of the BeMovies application, a problem was identified with the display of films in the carousel. By default, the TMDB API returns a limited list of films (first 20 results). This resulted in an incomplete carousel that did not display all the films available.
-
-#### Solution
-
-
 # Lessons Learned
 
  If your question is "What did you learn while building this project? What challenges did you face and how did you overcome them?" take a look ⬇️
