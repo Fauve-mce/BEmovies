@@ -24,7 +24,6 @@
                 <li class="active"><a href="#searsh_ancre">Searsh</a></li>
                 <li><a href="#latest_ancre">Latest</a></li>
                 <li><a href="#genres_ancre">Genres</a></li>
-                <li><a href="./RegisterLogin.html">Register</a></li>
                 <li><a href="./RegisterLogin.html">Singin</a></li>
             </ul>
         </nav>
@@ -59,7 +58,7 @@
 
     </div>
 
-    <div class="section2">
+    <div class="section2" style="display: none;">
         <section id="carousel1" class="splide" aria-labelledby="carousel-heading">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -76,35 +75,28 @@
             <div class="swiper-wrapper">
                 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
         
+        <!-- <div class="swiper-pagination"></div> -->
     </div>
 
     <div class="section4" id="genres_ancre">
         <div class="MBG">
             <h3>Movies by genre</h3>
             <div class="buttons">
-                <button genres-movie="" class="active">Comédie</button>
-                <button genres-movie="">Drama</button>
-                <button genres-movie="">Action</button>
-                <button genres-movie="">Romance</button>
-                <button genres-movie="">Fantasy</button>
-                <button genres-movie="">Animation</button>
+                <button genres-movie="35" class="active">Comédie</button>
+                <button genres-movie="18">Drama</button>
+                <button genres-movie="28">Action</button>
+                <button genres-movie="10749">Romance</button>
+                <button genres-movie="14">Fantasy</button>
+                <button genres-movie="16">Animation</button>
             </div>
         </div>
 
         <section id="carousel2" class="splide" aria-labelledby="carousel-heading">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="./assets/img/img-1.webp"></li>
-                    <li class="splide__slide"><img src="./assets/img/img-2.jpg"></li>
-                    <li class="splide__slide"><img src="./assets/img/img-3.jpg"></li>
-                    <li class="splide__slide"><img src="./assets/img/img-4.jpg"></li>
-                    <li class="splide__slide"><img src="./assets/img/img-5.jpeg"></li>
-                    <li class="splide__slide"><img src="./assets/img/img-6.webp"></li>
-                    <li class="splide__slide"><img src="./assets/img/img-7.webp"></li>
+                    
                 </ul>
             </div>
         </section>
@@ -112,7 +104,6 @@
     </div>
 
         <footer>
-            
                 <a class="logo-footer"><img src="./assets/img/logo-BEMOVIE-4.svg"></a>
             
             <nav class="navbar-footer">
@@ -131,14 +122,17 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     
+
+
+
     <!-- Ajustement de swiper voir la doc -->
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const swiper = new Swiper('.swiper-container', {
                 loop: true,
                 grapCursor: true,
                 centeredSlides: true,
-                initialSlide: 2,
+                initialSlide: 3,
                 slidesPerView: 4, // Affiche trois slides visibles
                 spaceBetween: 30, // Espace entre les slides
                 loop: true,
@@ -161,9 +155,9 @@
             });
             });
     </script>
-        
+         -->
     <!-- Ajustement de splide voir la doc -->
-    <script>
+    <!-- <script>
         document.addEventListener( 'DOMContentLoaded', function() {
             var splide = new Splide( '#carousel2', {
                 width: '75%',
@@ -175,34 +169,24 @@
             });
             splide.mount();
         });
-    </script>
+    </script> -->
 
-<script>
+<!-- <script>
     document.addEventListener( 'DOMContentLoaded', function() {
         var splide = new Splide( '#carousel1',{
             type: 'loop',         // Boucle infinie
-        perPage: 3,           // Nombre de slides visibles en même temps
-        perMove: 4,           // Nombre de slides à déplacer par clic
-        gap: '200px',          // Espace entre les slides
-        pagination: false,    // Désactiver la pagination si elle n’est pas nécessaire
-        width: '0%',         // Largeur totale du carousel (ajustable selon vos besoins)
-        height: '200px',      // Hauteur des slides
-        autoWidth: false,     // Désactiver les largeurs automatiques si vous voulez un contrôle précis
-        // gap: '-178px',
-        // breakpoints: {        // Points de rupture pour le responsive design
-        //     1024: {
-        //         perPage: 4,    // Affiche 2 slides sur des écrans plus petits
-        //         gap: '15px',
-        //     },
-        //     768: {
-        //         perPage: 4,    // Affiche 1 slide sur des écrans encore plus petits
-        //         gap: '10px',
-        //     },
-        // },
+            perPage: 5,           // Nombre de slides visibles en même temps
+            perMove: 1,           // Nombre de slides à déplacer par clic
+            gap: '15px',          // Espace entre les slides
+            pagination: false,    // Désactiver la pagination si elle n’est pas nécessaire
+            width: 'auto',         // Largeur totale du carousel 
+            fixedWidth: '220px',
+            height: '350px',      // Hauteur des slides
+            autoWidth: false,     // Désactiver les largeurs automatiques pour un contrôle précis
     });
         splide.mount();
     } );
-</script>
+</> -->
 
     
 

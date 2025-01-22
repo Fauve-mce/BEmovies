@@ -14,7 +14,7 @@
     
     font-family:  "Poppins", serif;
     font-weight: 400;
-    outline: 1px solid red; /*Pour visualiser tous les éléments*/
+    /* outline: 1px solid red; Pour visualiser tous les éléments */
 }
 
 :root{
@@ -43,7 +43,8 @@ body {
 /******************************** Neumorphic Toggle ********************************/ 
 
 .body-on{
-    background-color: #b399ae;
+    /* background-color: #b399ae; */
+    background-color: #f5f0f6;
 }
 
 .btn-neum{
@@ -236,7 +237,7 @@ input:focus, .header-searsh-filter-button:hover {
     justify-content: center;
     width: 100%;
     height: 440px;
-    margin-top: 30px;
+    margin-top: 30px; 
 }
 
 /* Section du carrousel */
@@ -246,11 +247,15 @@ input:focus, .header-searsh-filter-button:hover {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 700px;
+    margin-top: 50px;
 }
 
 h3{
     font-family: 'Helvetica Neue', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    font-size: x-large;
 }
 
 /* section movie by genre */
@@ -260,7 +265,7 @@ h3{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 800px;
     margin-top: 0px; 
     padding: 20px 0;
     margin-top: 60px;
@@ -272,11 +277,12 @@ h3{
     display: flex;
     justify-content: center;
     max-width: 60%;
-    height: 400px;
+    height: 600px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background-color: #e0e32a;
+    /* background-color: #e0e32a; */
+    margin-top: 30px;
 }
 
 .swiper-container h3 {
@@ -292,13 +298,16 @@ swiper-wrapper{
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background-color: #444;
     color: white;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    background-color: #a0a4c4;
-    max-width: 60%;
-    height: 350px;
+    max-width: 320px;
+    height: 550px;
+    margin-top: 15px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    position: relative; /* Assure que l'overlay se positionne correctement */
+    overflow: hidden; /* Cache les parties dépassantes */
 }
 
 .swiper-slide-active {
@@ -310,9 +319,8 @@ swiper-wrapper{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
-
 
 
 /* Ajuste la taille et la position des slides actifs et adjacents */
@@ -320,63 +328,29 @@ swiper-wrapper{
     transform: scale(1); /* Slide central */
 }
 
-
-.swiper-button-next, 
-.swiper-button-prev {
-    align-items: center;
-    background: #ccc;
-    border: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    display: -ms-flexbox;
-    display: flex;
-    height: 2em;
-    -ms-flex-pack: center;
-    justify-content: center;
-    opacity: 0.7;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    width: 2em;
-    color: black;
-    transform: translateY(-50%);
-    z-index: 10;
+.swiper-slide-shadow-left{
+    display: none;
 }
 
-/* .swiper-button-prev, .swiper-button-next {
-    all: initial;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
-    
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    z-index: 1000;
-    width: 40px;
-  }
-  
-  .swiper-button-next{
-    right: 20px;
-  } */
-
-
-
-
-
-
-
-.swiper-button-next:hover, .swiper-button-prev:hover {
-    color: #7c0c6d;
-    transition: all 1s ease-in-out;
+swiper-slide-shadow-coverflow{
+    display: none;
 }
+
+.swiper-slide-shadow-right{
+    display: none;
+}
+
+.swiper-slide-shadow-coverflow{
+    display: none;
+}
+
+
 
 /*********************************** movie by genres buttons  ********************************/
 
 .MBG{
     width: 50%;
-    height: 150px;
+    height: 250px;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
@@ -418,17 +392,17 @@ li img{
 }
 
 #carousel1{
-    width: 75%;
-}
-
-#carousel2 .splide{
-    margin-top: -50px;
+    padding-right: 20px;
+    /* outline: 2px solid red;  */
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 1300px; /* Calcul pour affiché 5 diapositive. Total width = (220px * 5) + (15px * 5) = 1100px + 60px = 1175px */
 }
 
 #carousel1 .splide__slide{
-    max-width: 20%;
+    max-width: 220px;
     height: 350px;
-    background-color:blue;
+    box-sizing: border-box;
 }
 
 #carousel1 .splide__list img{
@@ -439,37 +413,86 @@ li img{
 
 #carousel1 .splide__list{
     gap: 15px;
+    display: flex;
+    justify-content: center;
+    width: 795px;;
 }
 
-/* Pagination et boutons Swiper */
-
-#carousel1 .splide__pagination__page{
-    
-    margin-bottom: 50px;
-}
-
-#carousel2 .splide__pagination__page{
-    margin-bottom: 80px;
+#carousel1 .splide__track{
+    margin-left: 25px;
 }
 
 #carousel1 .splide__arrow--next,
-#carousel2 .splide__arrow--next{
-    right: -60px;
-    transform: translateY(-50%);
-}
-
-#carousel1 .splide__arrow--next{
-    transform: translateY(-150%);
-}
-
-#carousel1 .splide__arrow--prev,
-#carousel2 .splide__arrow--prev{
-    left: -40px;
-    transform: translateY(-50%);
-}
-
 #carousel1 .splide__arrow--prev{
+    position: absolute;
+    top: 60%;
     transform: translateY(-150%);
+}
+
+#carousel1 .splide__arrow--prev {
+    left: -10px; 
+}
+
+#carousel1 .splide__arrow--next {
+    right: -30px; 
+}
+
+
+
+
+
+
+
+
+#carousel2 .splide{
+    margin-top: -80px; 
+    padding-top: 0;
+    background-color: #bebebe;
+}
+
+#carousel2{
+    padding-right: 20px;
+    /* outline: 2px solid red;  */
+    margin-bottom: 100px;
+    width: 1300px; /* Calcul pour affiché 5 diapositive. Total width = (220px * 5) + (15px * 5) = 1100px + 60px = 1175px */
+}
+
+#carousel2 .splide__slide{
+    max-width: 220px;
+    height: 350px;
+    box-sizing: border-box;
+}
+
+#carousel2 .splide__list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#carousel2 .splide__list{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    width: 795px;;
+}
+
+#carousel2 .splide__track{
+    margin-left: 25px;
+}
+
+#carousel2 .splide__arrow--next,
+#carousel2 .splide__arrow--prev{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-150%);
+}
+
+#carousel2 .splide__arrow--prev {
+    left: -10px; 
+}
+
+#carousel2 .splide__arrow--next {
+    right: -30px; 
 }
 
 
@@ -498,9 +521,61 @@ button{
     }
 }
 
-#carousel2 li img,
-#carousel1 li img{
-    height: 500px;
+
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.movie-card:hover img {
+    opacity: 0.3;
+}
+
+.movie-card:hover .movie-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.movie-details {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.movie-rating {
+    font-size: 1rem;
+    color: red;
 }
 
 /*********************************** FOOTER  ********************************/
@@ -509,7 +584,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 85%;
     height: 150px;
     background: #141517;
     padding: 0 20px;
