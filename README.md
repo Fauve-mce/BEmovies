@@ -1,13 +1,13 @@
 
 # BeMovies
-
+## 📋 Project Overview
 Welcome to BeMovies, an app for discovering films!  
 This application lets you check the latest releases,  
 sort films by genre and search for films to find out more about them. 
 
 
 
-## Overview
+## 📸 Project Preview
 
 ![BeMovies Accueil.html-Screenshot](assets/img/Accueil.html-Screenshot.png)
 
@@ -81,6 +81,10 @@ Here's the logo for the BeMovies application :
 
 ![Logo BeMovies](assets/img/logo-BEMOVIE-4.svg)
 
+
+## 🌐 Live Demo
+
+Check out the deployed version here: [GitHub Pages](https://fauve-mce.github.io/BEmovies/)
 
 
 # Contributing
