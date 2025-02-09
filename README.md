@@ -74,12 +74,12 @@ Clone the repository to your local machine using Git:
 #### Solution
 
 
-# Tips and Tricks
+## Tips and Tricks
 
 - To obtain the API key, register on TMDB.
 - Make sure you include the Bearer authorization in the headers of your requests.
 - Use the DISCOVER, GENRES, and MOVIES endpoints of the TMDB API.
-- 
+  
 ## 🎨 Design overview
 The application design is based on the provided Figma template, with my personal touch added to make the development process more enjoyable and fun.
 
