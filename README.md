@@ -5,20 +5,23 @@ Welcome to BeMovies, an app for discovering films!
 This application lets you check the latest releases,  
 sort films by genre and search for films to find out more about them. 
 
-
-
-## 📸 Project Preview
-
-![BeMovies Accueil.html-Screenshot](assets/img/Accueil.html-Screenshot.png)
-
-![BeMovies RegisterLogin.html-Screenshot](assets/img/RegisterLogin.html-Screenshot.png)
-# Features
+## 📱 Features
 
 - View the latest movie releases.
 - Sort movies by genre.
 - Search for specific films.
 - See details of a film: year of release, rating, description, genres and cast.
 - Light/dark mode toggle
+
+## 📸 Project Preview
+
+![BeMovies Accueil.html-Screenshot](assets/img/Accueil.html-Screenshot.png)
+
+![BeMovies RegisterLogin.html-Screenshot](assets/img/RegisterLogin.html-Screenshot.png)
+
+## 📂 Project Structure
+
+
 
 
 # Tech Stack
@@ -31,7 +34,7 @@ sort films by genre and search for films to find out more about them.
 **Server:** 
 
 
-# Installation
+## ⚙️ How to Run the Project
 
 Follow these steps to set up and run BeMovies locally.        
 Clone the repository to your local machine using Git:
@@ -41,7 +44,7 @@ Clone the repository to your local machine using Git:
   cd bemovies
 ```
     
-# API configuration
+## API configuration
 
 
 - Créez un compte sur TMDB pour obtenir votre clé API.
@@ -49,10 +52,10 @@ Clone the repository to your local machine using Git:
   ```
   REACT_APP_API_KEY=VotreCléAPI
   ```
-# API Reference
 
 
-# Lessons Learned
+
+## Lessons Learned
 
  If your question is "What did you learn while building this project? What challenges did you face and how did you overcome them?" take a look ⬇️
 
