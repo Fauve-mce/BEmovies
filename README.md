@@ -82,13 +82,13 @@ Clone the repository to your local machine using Git:
 - To obtain the API key, register on TMDB.
 - Make sure you include the Bearer authorization in the headers of your requests.
 - Use the DISCOVER, GENRES, and MOVIES endpoints of the TMDB API.
-# Design overview
-
-The application design is based on the template provided, with adjustments to match the functionality required.
+- 
+## 🎨 Design overview
+The application design is based on the provided Figma template, with my personal touch added to make the development process more enjoyable and fun.
 
 [Figma - BeMovies project design](https://www.figma.com/proto/jT6U3cABdKEUDRVTUJSbQd/BeMovies?node-id=1-2&p=f&t=fyC6QQ80OmNlIvq7-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
-# Logo
 
+## 🖼️ Logo
 Here's the logo for the BeMovies application :
 
 ![Logo BeMovies](assets/img/logo-BEMOVIE-4.svg)
@@ -99,7 +99,7 @@ Here's the logo for the BeMovies application :
 Check out the deployed version here: [GitHub Pages](https://fauve-mce.github.io/BEmovies/)
 
 
-# Contributing
+## 🎥 Contributing
 
 - Directed by : Fauve Mareels
 
