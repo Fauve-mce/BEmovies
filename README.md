@@ -20,8 +20,17 @@ sort films by genre and search for films to find out more about them.
 ![BeMovies RegisterLogin.html-Screenshot](assets/img/RegisterLogin.html-Screenshot.png)
 
 ## 📂 Project Structure
-
-
+- index.html
+- RegisterLogin.html
+- assets/
+  - img/
+    - Accueil-Screenshot.png
+    - RegisterLogin-Screenshot.png
+    - logo-BEMOVIE-4.svg
+  - css/
+    - Accueil.css
+- js/
+  - app.js
 
 
 # Tech Stack
