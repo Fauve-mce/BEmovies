@@ -1,5 +1,5 @@
 
-# 🍿🍿🍿🍿🍿🍿🍿🍿BeMovies🍿🍿🍿🍿🍿🍿🍿🍿
+#     🍿🍿🍿🍿🍿🍿🍿🍿BeMovies🍿🍿🍿🍿🍿🍿🍿🍿
 ## 📋 Project Overview
 Welcome to BeMovies, an app for discovering films!  
 This application lets you check the latest releases,  
