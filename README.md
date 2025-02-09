@@ -50,22 +50,20 @@ Clone the repository to your local machine using Git:
   cd bemovies
 ```
     
-## API configuration
+## 🔑 API Configuration
 
+To get started with the TMDB API, follow these steps:
 
-- Créez un compte sur TMDB pour obtenir votre clé API.
-- Ajoutez votre clé API dans le fichier `.env` comme suit :
-  ```
-  REACT_APP_API_KEY=VotreCléAPI
-  ```
+1️⃣ **Create an account** on [TMDB](https://www.themoviedb.org/) to obtain your API key.  
+2️⃣ **Add your API key** to the `.env` file in the root directory of your project:  
 
-
+```env
+REACT_APP_API_KEY=YourAPIKeyHere
+```
 
 ## Lessons Learned
 
  If your question is "What did you learn while building this project? What challenges did you face and how did you overcome them?" take a look ⬇️
-
-### 1. 
 
 #### Problem
 
