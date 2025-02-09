@@ -32,16 +32,13 @@ sort films by genre and search for films to find out more about them.
 - js/
   - app.js
 
+## 🚀 Technologies Used
 
-# Tech Stack
-
-**Client:** 
-- HTML/CSS (Sass) for the front-end.
-- JavaScript for dynamic functionalities.
-- TMDB API to retrieve film data.
-
-**Server:** 
-
+- **HTML5** for semantic structure  
+- **CSS3 (Sass)** with Flexbox and Grid for layout design  
+- **JavaScript (Vanilla)** for dynamic functionalities  
+- **TMDB API** to retrieve film data  
+- **Google Fonts** (Inter)
 
 ## ⚙️ How to Run the Project
 
