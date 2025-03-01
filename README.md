@@ -91,7 +91,7 @@ Here's the logo for the BeMovies application :
 
 ## 🌐 Live Demo
 
-Check out the deployed version here: [GitHub Pages](https://fauve-mce.github.io/BEmovies/)
+Check out the deployed version here: [Bemovies](https://fauve-mce.github.io/BEmovies/)
 
 
 ## 🎥 Contributing
